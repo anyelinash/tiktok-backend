@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+</head>
+<body>
+    <video controls>
+        <source src="data:video/mp4;base64,{{ video_data }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>
+<script>
+    const videoPlayer = document.getElementById('videoPlayer');
+    let startTime = 0;
+  
+    // Función para enviar el tiempo de reproducción al servidor
+    function sendWatchTime(videoId, watchTime) {
+      fetch('/api/video-watch-time', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ 
+          video_id: videoId, 
+          watch_time: watchTime 
+        })
+      })
+      .then(response => {
+        if (response.ok) {
+          console.log('Tiempo de visualización registrado correctamente.');
+        } else {
+          console.error('Error al registrar el tiempo de visualización.');
+        }
+      })
+      .catch(error => {
+        console.error('Error al realizar la solicitud:', error);
+      });
+    }
+  
+    // Evento cuando el video empieza a reproducirse
+    videoPlayer.addEventListener('play', function() {
+      startTime = videoPlayer.currentTime; // Guardar el tiempo de inicio de reproducción
+    });
+  
+    // Evento cuando el video se pausa
+    videoPlayer.addEventListener('pause', function() {
+    const videoId = "{{ video_id }}"; // ID del video obtenido del servidor
+    const currentTime = videoPlayer.currentTime; // Tiempo de pausa
+    // Calcular el tiempo de visualización
+    let watchTime = currentTime - startTime;
+    // Limitar el tiempo de visualización a 15 segundos
+    watchTime = Math.min(watchTime, 15);
+    // Enviar el tiempo de visualización al servidor
+    sendWatchTime(videoId, watchTime);
+    });
+
+// Evento cuando el video termina
+videoPlayer.addEventListener('ended', function() {
+  const videoId = "{{ video_id }}"; // ID del video obtenido del servidor
+  // Enviar el tiempo de visualización como 15 segundos al servidor
+  sendWatchTime(videoId, 15);
+});
+
+  
+    // Evento cuando el video termina
+    videoPlayer.addEventListener('ended', function() {
+      const videoId = "{{ video_id }}"; // ID del video obtenido del servidor
+      // Enviar el tiempo de visualización como 15 segundos al servidor
+      sendWatchTime(videoId, 15);
+    });
+  </script>
+  
