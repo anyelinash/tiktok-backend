@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "pivotal-pursuit-424722-g3",
+  "private_key_id": "4f2d6a6fe7d43caa696b5df891c2b9b5647c02a2",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDLyOH4HYWswAHF\nRGxHaoZCPfHOCgkrEXNg3fJ6+jJUpXS5l1EpSPruBKYhJ5nj1WAm4NT6Ncdk9dqL\nHvzhjtcK98nJiMlGfZiT8u02nd8gqwzV6avyVUkbkwwNdo7PkhYjKRiMB9N9YiqK\nRneNs8fxLk129gQ8Rt/mnIyaGBktiDC1GQlW0lAYiHN/QuXJiOvhglsWd1FIq4wl\npvPsVnO0o7Ake4W2Ha6XGFlQdhZj54uKUvDz65r8yBxNAGjlH6BvE/F4FZh/JCZK\nhVdbTR5KlILJLSO3DE9446tu0X+7My3whSPveXOyTx/ZHAozDIP+fpN8TF46igRO\n8kJTHHy7AgMBAAECggEAHxbkP+R5H/7MW6/G+SpA61rkngjH7KB6mBJO9lYKAayb\nCd68923L4oN7uN6AICh4b9X93WJWVjUahKj97tzKOpZ3sYhtyemgB8pC8wHTfaS6\n45Ovs4aGuG85ooAuOhqmcpzIGEJFZgE+TjQr9HFeFTx5fab7bxq8+UN0QToLSqJm\nYT7TqrfnyTFQWEOzQy4qJfLbDT3YkQpYiFc3o94AI7f5++fLndasno/JMwhJGmYY\ngBZjQRLzS+ZCJfK+zo6TA45kfLhcsoKb4Y5aGijWBvlYbXsH+t0CgMsERuV4TB46\nPZ9BRKisON1XAeCG+dtuTgwFchCVq+7pEaRpqiWSoQKBgQDnYkG4dYrEkcsiUIMX\ndf9Qi63enebYplbiXOrvHIme0ik0EYqSIei6QF1+EC8L9UT/ENFNiLDZvQlMBE0G\nQsFy1bLavLSHfn4ckeE9td+QJ6Xgkyekre9Z35tf+3E+hRapP2aWoFxl0AwtY3lR\nAWtZtvqmZxgCiDP+EwCwSb5riwKBgQDhdvah2ANdcdXZbNjTLVeTf1n8oohIY9ma\nXH6aalBi2bgE8up6MJ/ZXOhAGjeW4TEf2R2X/v66nxB7QWXPhX5bSncMMErHrwgK\nhPCmDAI+Mj4U+Usgx8wBoRhwRZfwZdU1tOEHGipWXUIw19B3BcjdXEWk16sMm92+\ndbP7/WMZkQKBgQCWAP4oTpOLAhWWBmomMIo3toYet3Fr7NKQ57orD+4sN4Ucy25x\ndGhDLu0th+JoNzbmwQlf4Yj9b+7yCCvDLk3pW58a7ZF/8cJiVTSX5CuucfW41M2z\nlkuAkVVScVkmNfPN/1tLtWSRYMI0PrPsjyYAQH7YmCdZpOFICxu8LeK0JwKBgCAq\nnsk8Tk6YnQ/mDZEjWOk8NBRtA9CAHl19cLqLDGjt8ukR1w4Tvdp+/MuYcfHesul+\nSlCTGrh5VRqgm+vdeceAejeM9D5E5HrLuKGX+QHynRTU9Dj7CEn7N8dcxm6PuLlu\n0uP2ga/MolLhl2ZDtwKN1YnNEyQ7YIl5tXHwFqFhAoGALPgRdiY93N3hIQoFC26b\nY6OIkUgKd8Xbsg9RlUF8Myx7/CIcKUUa+QceF7yX9Rpa5RjQc54HW4S776NY7NnC\nuYf80QWy/ALtsDuD065edup5Q1NTRVzsCb3R+AcIfJ0B5Wdzsq7zCBD2TuIbsn7Y\nV+mTRIg+x93OFjZtYdCp2b8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "tiktokclon@pivotal-pursuit-424722-g3.iam.gserviceaccount.com",
+  "client_id": "106009805894118441062",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/tiktokclon%40pivotal-pursuit-424722-g3.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
